@@ -1,0 +1,35 @@
+.vehicleTypeContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.vehicleTypeContainer label {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.vehicleTypeContainer input[type="radio"] {
+    display: none;
+}
+
+.vehicleTypeContainer div {
+    /* width: 50px; */
+
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.selected div {
+    transform: scale(1.2);
+    border: 1px solid #E44848;
+    border-radius: 5px;
+}
+
+.vehicleTypeText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #101828;
+}

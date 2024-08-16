@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.vehicleTypeContainer {
+    /* flex-shrink: 0; */
+    /* width: 300px; */
+    /* Ширина блоку радіокнопок */
+}
+
+.camperListContainer {
+    /* flex-grow: 1; */
+}
+
+.camperList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.camperListItem {
+    margin-bottom: 20px;
+}
