@@ -5,14 +5,10 @@
 }
 
 .vehicleTypeContainer {
-    /* flex-shrink: 0; */
-    /* width: 300px; */
-    /* Ширина блоку радіокнопок */
+    width: 360px;
 }
 
-.camperListContainer {
-    /* flex-grow: 1; */
-}
+.camperListContainer {}
 
 .camperList {
     display: flex;

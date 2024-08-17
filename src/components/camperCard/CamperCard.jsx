@@ -33,7 +33,7 @@ const CamperCard = ({
                 <div className={css.camperHeader}>
                     <p className={css.camperName}>{name}</p>
                     <p className={css.camperPrice}>€{price}.00</p>
-                    <FavoriteButton className={css.camperFavorite} />
+                    <FavoriteButton className={css.camperFavorite} camperId={_id} />
                 </div>
                 <div className={css.camperWrapper}>
                     <img src={star} width={16} alt="star" />
