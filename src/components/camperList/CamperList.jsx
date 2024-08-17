@@ -1,16 +1,21 @@
 import { useSelector } from 'react-redux';
 import { selectCampers } from '../../redux/campers/selectors';
 import CamperCard from '../camperCard/CamperCard';
-import VehicleType from '../vehicleType/VehicleType';
+
 import styles from './CamperList.module.css';
+import FilterBar from '../filterBar/filterBar';
+
 
 const CamperList = () => {
     const campers = useSelector(selectCampers);
 
     return (
         <div className={styles.container}>
+            <div>
+
+            </div>
             <div className={styles.vehicleTypeContainer}>
-                <VehicleType />
+                <FilterBar />
             </div>
             <div className={styles.camperListContainer}>
                 {!campers.length ? (

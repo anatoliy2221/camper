@@ -2,7 +2,7 @@ import { useState } from 'react';
 import vanImage from '../../assets/Van.svg';
 import fullyIntegImage from '../../assets/Fully.svg';
 import alcoveImage from '../../assets/Alcove.svg';
-import css from './VehicleType.module.css'; // Імпорт модульного CSS
+import css from './VehicleType.module.css';
 
 const VehicleType = () => {
     const [vehicleType, setVehicleType] = useState('');
@@ -11,49 +11,48 @@ const VehicleType = () => {
         <>
             <p>Vehicle type</p>
             <div className={css.vehicleTypeContainer}>
-                <label className={vehicleType === 'van' ? css.selected : ''}>
+                <label
+                    className={`${css.label} ${vehicleType === 'van' ? css.selected : ''}`}
+                >
                     <input
                         type="radio"
                         name="vehicleType"
                         value="van"
-                        checked={vehicleType === "van"}
+                        checked={vehicleType === 'van'}
                         onChange={() => setVehicleType('van')}
                     />
-                    <div>
-                        <img src={vanImage} alt="Van" />
-                        <p>Van</p>
-                    </div>
+                    <img src={vanImage} alt="Van" />
+                    <p>Van</p>
                 </label>
-                <label className={vehicleType === 'fullyInteg' ? css.selected : ''}>
+                <label
+                    className={`${css.label} ${vehicleType === 'fullyInteg' ? css.selected : ''}`}
+                >
                     <input
                         type="radio"
                         name="vehicleType"
                         value="fullyInteg"
-                        checked={vehicleType === "fullyInteg"}
+                        checked={vehicleType === 'fullyInteg'}
                         onChange={() => setVehicleType('fullyInteg')}
                     />
-                    <div>
-                        <img src={fullyIntegImage} alt="Fully Integrated" />
-                        <p>Fully Integrated</p>
-                    </div>
+                    <img src={fullyIntegImage} alt="Fully Integrated" />
+                    <p>Fully Integrated</p>
                 </label>
-                <label className={vehicleType === 'alcove' ? css.selected : ''}>
+                <label
+                    className={`${css.label} ${vehicleType === 'alcove' ? css.selected : ''}`}
+                >
                     <input
                         type="radio"
                         name="vehicleType"
                         value="alcove"
-                        checked={vehicleType === "alcove"}
+                        checked={vehicleType === 'alcove'}
                         onChange={() => setVehicleType('alcove')}
                     />
-                    <div>
-                        <img src={alcoveImage} alt="Alcove" />
-                        <p>Alcove</p>
-                    </div>
+                    <img src={alcoveImage} alt="Alcove" />
+                    <p>Alcove</p>
                 </label>
             </div>
         </>
     );
-}
+};
 
 export default VehicleType;
-

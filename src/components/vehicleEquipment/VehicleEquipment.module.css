@@ -1,0 +1,38 @@
+.equipmentList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.equipmentItem {
+    padding: 17px 18px;
+    width: 112px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(16, 24, 40, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.equipmentItem img {
+    width: 32px;
+    height: 60px;
+}
+
+.equipmentItem p {
+    margin: 0;
+}
+
+.equipmentItem:hover {
+    background-color: #f0f0f0;
+}
+
+.selected {
+    border-color: #e44848;
+    background-color: #ffe5e5;
+}
