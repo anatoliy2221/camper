@@ -9,7 +9,7 @@ import NotFoundPage from './pages/NotFoundPage.jsx';
 import Navigation from './components/navigation/Navigation.jsx';
 import Features from './components/features/Features.jsx';
 import Reviews from './components/features/reviews/Reviews.jsx';
-import { CamperModal } from './components/camperModal/camperModal.jsx';
+import CamperModal from './components/camperModal/camperModal.jsx';
 
 
 const App = () => {
