@@ -9,18 +9,21 @@ import NotFoundPage from './pages/NotFoundPage.jsx';
 import Navigation from './components/navigation/Navigation.jsx';
 import Features from './components/features/Features.jsx';
 import Reviews from './components/features/reviews/Reviews.jsx';
+import { CamperModal } from './components/camperModal/camperModal.jsx';
+
 
 const App = () => {
   return (
     <>
       <Navigation />
-      <Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/catalog' element={<Catalog />}>
-            <Route path=":camperId" element={<Outlet />}>
-              <Route path="features" element={<Features />} />
-              <Route path="reviews" element={<Reviews />} />
+            <Route path=':camperId' element={<Outlet />}>
+              <Route index element={<CamperModal />} />
+              <Route path='features' element={<Features />} />
+              <Route path='reviews' element={<Reviews />} />
             </Route>
           </Route>
           <Route path='/favorites' element={<Favorites />} />
@@ -32,4 +35,3 @@ const App = () => {
 };
 
 export default App;
-

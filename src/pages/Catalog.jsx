@@ -13,7 +13,7 @@ import {
 } from '../redux/campers/selectors';
 import { setPage } from '../redux/campers/slice';
 import { CamperModal } from '../components/camperModal/camperModal';
-import { Outlet, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Catalog = () => {
     const dispatch = useDispatch();
@@ -71,7 +71,7 @@ const Catalog = () => {
                 </LoadMoreBtn>
             )}
             {showModal && <CamperModal selectedCamper={selectedCamper} modalIsOpen={showModal} closeModal={closeModal} />}
-            <Outlet />
+
         </>
     );
 };

@@ -28,3 +28,4 @@ export const CamperModal = ({ selectedCamper, closeModal }) => {
         </Modal>
     );
 };
+
