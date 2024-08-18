@@ -3,10 +3,8 @@ import css from './FeaturesModal.module.css';
 
 const FeaturesModal = ({ selectedCamper }) => {
     const { camperId } = useParams();
-    console.log(camperId);
 
-
-    if (!selectedCamper) return null;
+    if (!selectedCamper || selectedCamper._id !== camperId) return null;
 
     const { name, price, rating, location, description, reviews, gallery } = selectedCamper;
 

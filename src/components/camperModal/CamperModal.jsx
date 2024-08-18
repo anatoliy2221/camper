@@ -15,17 +15,15 @@ const customStyles = {
 
 Modal.setAppElement('#root');
 
-export const CamperModal = ({ selectedCamper, modalIsOpen, closeModal }) => {
+export const CamperModal = ({ selectedCamper, closeModal }) => {
     return (
         <Modal
-            isOpen={modalIsOpen}
+            isOpen={!!selectedCamper}
             onRequestClose={closeModal}
             style={customStyles}
             contentLabel="Camper Details"
         >
-            <button className={css.closeButton} onClick={closeModal}>
-                X
-            </button>
+            <button className={css.closeButton} onClick={closeModal}>X</button>
             <FeaturesModal selectedCamper={selectedCamper} />
         </Modal>
     );
