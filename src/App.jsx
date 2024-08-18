@@ -8,9 +8,8 @@ import Favorites from './pages/Favorites.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 import Navigation from './components/navigation/Navigation.jsx';
 import Features from './components/features/Features.jsx';
-import Reviews from './components/features/reviews/Reviews.jsx';
+import Reviews from './components/reviews/Reviews.jsx';
 import { CamperModal } from './components/camperModal/CamperModal.jsx';
-
 
 const App = () => {
   return (
@@ -35,3 +34,6 @@ const App = () => {
 };
 
 export default App;
+
+
+
