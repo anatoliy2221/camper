@@ -58,6 +58,7 @@ const CamperCard = ({
                     <li className={css.camperFeaturesItem}><img src={airConditioner}></img>{details.airConditioner ? 'AC' : 'No AC'}</li>
                 </ul>
                 <button className={css.showMore} onClick={() => openModal({
+                    _id,
                     name,
                     price,
                     rating,
