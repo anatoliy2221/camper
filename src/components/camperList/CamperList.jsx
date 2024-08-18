@@ -6,7 +6,8 @@ import styles from './CamperList.module.css';
 import FilterBar from '../filterBar/filterBar';
 
 
-const CamperList = () => {
+
+const CamperList = ({ openModal }) => {
     const campers = useSelector(selectCampers);
 
     return (
@@ -24,7 +25,7 @@ const CamperList = () => {
                     <ul className={styles.camperList}>
                         {campers.map((camper) => (
                             <li key={camper._id} className={styles.camperListItem}>
-                                <CamperCard {...camper} />
+                                <CamperCard {...camper} openModal={openModal} />
                             </li>
                         ))}
                     </ul>

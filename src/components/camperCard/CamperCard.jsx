@@ -23,6 +23,7 @@ const CamperCard = ({
     transmission,
     engine,
     details,
+    openModal,
 }) => {
     return (
         <div key={_id} className={css.camperItem}>
@@ -56,7 +57,19 @@ const CamperCard = ({
                     <li className={css.camperFeaturesItem}><img src={beds}></img>{`${details.beds} beds`}</li>
                     <li className={css.camperFeaturesItem}><img src={airConditioner}></img>{details.airConditioner ? 'AC' : 'No AC'}</li>
                 </ul>
-                <button className={css.showMore}>Show more</button>
+                <button className={css.showMore} onClick={() => openModal({
+                    name,
+                    price,
+                    rating,
+                    location,
+                    adults,
+                    engine,
+                    transmission,
+                    description,
+                    reviews,
+                    details,
+                    gallery
+                })}>Show more</button>
             </div>
         </div>
     );
