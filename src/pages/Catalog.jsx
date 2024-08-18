@@ -12,7 +12,7 @@ import {
     selectPage,
 } from '../redux/campers/selectors';
 import { setPage } from '../redux/campers/slice';
-import { CamperModal } from '../components/camperModal/camperModal';
+import { CamperModal } from '../components/camperModal/CamperModal';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const Catalog = () => {
