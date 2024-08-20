@@ -1,11 +1,9 @@
 .camperItem {
   display: flex;
   align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 20px;
   background-color: #fff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 840px;
+  gap: 24px;
 }
 
 .camperImage {
@@ -16,16 +14,15 @@
 }
 
 .camperInfo {
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  width: 526px;
 }
 
 .camperHeader {
   display: flex;
-
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .camperName {
@@ -39,7 +36,6 @@
   flex-grow: 1;
   font-weight: 600;
   font-size: 1.2em;
-
   line-height: 1.25;
   color: #101828;
 }
@@ -47,6 +43,7 @@
 .camperWrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .camperFavorite {
@@ -63,16 +60,16 @@
 
 .camperDescription {
   font-size: 16px;
-
   line-height: 1.5;
   color: #475467;
+  margin-bottom: 24px;
 }
 
 .camperFeatures {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 10px;
+  margin-bottom: 24px;
 }
 
 .camperFeaturesItem {
@@ -84,22 +81,18 @@
 
   border-radius: 100px;
   padding: 12px 18px;
-  width: 126px;
-  height: 44px;
-
   background: #f2f4f7;
-  mix-blend-mode: multiply;
 }
 
 .camperFeatures p {
   flex: 1 1 auto;
-  margin: 0;
+  margin-bottom: 0;
   font-size: 14px;
   color: #777;
 }
 
 .showMore {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 10px 15px;
   background-color: #ff6347;
   color: white;

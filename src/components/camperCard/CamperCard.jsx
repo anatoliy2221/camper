@@ -53,23 +53,23 @@ const CamperCard = ({
             {`${adults} adults`}
           </li>
           <li className={css.camperFeaturesItem}>
-            <img src={transmis}></img>
+            <img src={transmis} width={20}></img>
             {transmission}
           </li>
           <li className={css.camperFeaturesItem}>
-            <img src={patrol}></img>
+            <img src={patrol} width={20}></img>
             {engine}
           </li>
           <li className={css.camperFeaturesItem}>
-            <img src={kitchen}></img>
+            <img src={kitchen} width={20}></img>
             {details.kitchen ? 'Kitchen' : 'No Kitchen'}
           </li>
           <li className={css.camperFeaturesItem}>
-            <img src={beds}></img>
+            <img src={beds} width={20}></img>
             {`${details.beds} beds`}
           </li>
           <li className={css.camperFeaturesItem}>
-            <img src={airConditioner}></img>
+            <img src={airConditioner} width={20}></img>
             {details.airConditioner ? 'AC' : 'No AC'}
           </li>
         </ul>
