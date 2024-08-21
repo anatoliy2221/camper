@@ -54,7 +54,7 @@ const Home = () => {
             </ul>
             <h3>Ready to Start Your Adventure?</h3>
             <p>
-                Begin your journey with us today! Browse our selection of campers and book your next adventure in just a few clicks.
+                {/* Begin your journey with us today! Browse our selection of campers and book your next adventure in just a few clicks. */}
             </p>
         </div>
     );
