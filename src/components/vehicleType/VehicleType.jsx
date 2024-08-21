@@ -9,7 +9,7 @@ const VehicleType = () => {
 
     return (
         <>
-            <p>Vehicle type</p>
+            <p className={css.vehicleTypeTitle}>Vehicle type</p>
             <div className={css.vehicleTypeContainer}>
                 <label
                     className={`${css.label} ${vehicleType === 'van' ? css.selected : ''}`}

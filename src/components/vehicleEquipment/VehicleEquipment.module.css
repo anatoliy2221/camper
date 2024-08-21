@@ -2,6 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-bottom: 32px;
+}
+
+.equipmentListTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #101828;
+    margin-bottom: 24px;
 }
 
 .equipmentItem {
@@ -11,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+
     padding: 10px;
     border: 1px solid rgba(16, 24, 40, 0.2);
     border-radius: 10px;
@@ -24,9 +33,7 @@
     height: 60px;
 }
 
-.equipmentItem p {
-    margin: 0;
-}
+
 
 .equipmentItem:hover {
     background-color: #f0f0f0;

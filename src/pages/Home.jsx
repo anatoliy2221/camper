@@ -1,79 +1,60 @@
+import '../styles/pages.css';
+
 const Home = () => {
     return (
         <div>
             <h1>
-                Досліджуйте Україну з комфортом разом з нашими кемперами в оренду
+                Explore Ukraine in Comfort with Our Camper Rentals
             </h1>
             <h2>
-                Відкрийте для себе красу України у власному темпі завдяки нашим
-                першокласним кемперам в оренду. Незалежно від того, чи плануєте ви
-                вихідні на природі або тривалу подорож, наші повністю обладнані
-                кемпери нададуть вам свободу і гнучкість для дослідження мальовничих
-                ландшафтів, яскравих міст та прихованих перлин країни.
+                Discover the beauty of Ukraine at your own pace with our premium camper rentals. Whether you’re planning a weekend getaway or an extended road trip, our fully equipped campers provide the freedom and flexibility to explore the country’s stunning landscapes, vibrant cities, and hidden gems.
             </h2>
-            <h3>Чому обирають нас?</h3>
-            <ul>
+            <h3>Why Choose Us?</h3>
+            <ul className='home-list'>
                 <li>
                     <p>
-                        Комфорт у дорозі: Наші кемпери оснащені усім необхідним для
-                        комфортного проживання: зручними спальними місцями, повністю
-                        функціональними кухнями та просторими житловими зонами.
+                        Comfort on the Road: Our campers are designed to offer all the comforts of home, with modern amenities such as cozy sleeping areas, fully functional kitchens, and spacious living quarters.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Гнучкі маршрути: Забудьте про жорсткі плани подорожей. З нашими
-                        кемперами ви отримуєте свободу створювати власні пригоди,
-                        досліджуючи найкрасивіші куточки України у зручний для вас час.
+                        Flexible Itineraries: Say goodbye to rigid travel plans. With our campers, you have the freedom to create your own adventure, exploring Ukraine's most beautiful destinations at your leisure.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Доступні ціни: Насолоджуйтеся вигідними тарифами без прихованих
-                        платежів. Ми пропонуємо гнучкі пакети оренди, які підходять як для
-                        коротких поїздок, так і для тривалих подорожей.
+                        Affordable Rates: Enjoy competitive pricing with no hidden fees. We offer flexible rental packages to suit your needs, whether it's a short escape or a long-term journey.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Безпека передусім: Наш автопарк регулярно проходить технічний
-                        огляд та обслуговується, щоб забезпечити безпечний і безпроблемний
-                        досвід. Ми також надаємо цілодобову технічну підтримку на дорозі
-                        для вашого спокою.
+                        Safety First: Our fleet is regularly maintained and inspected to ensure a safe and hassle-free experience. We also provide 24/7 roadside assistance for peace of mind.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Місцевий досвід: Як українська компанія, ми знаємо найкращі
-                        маршрути, кемпінги та місця для відвідування. Допоможемо вам
-                        спланувати ідеальну подорож з порадами та рекомендаціями від
-                        експертів.
+                        Local Expertise: As a Ukrainian company, we know the best routes, campsites, and destinations. Let us help you plan the perfect trip with insider tips and recommendations.
                     </p>
                 </li>
             </ul>
-            <h3>Як це працює?</h3>
-            <ul>
+            <h3>How It Works</h3>
+            <ul className='home-list'>
                 <li>
-                    Обирайте свій кемпер: Перегляньте наш вибір повністю обладнаних
-                    кемперів та оберіть той, що найкраще відповідає вашим потребам.
+                    Choose Your Camper: Browse our selection of fully equipped campers and choose the one that best suits your needs.
                 </li>
                 <li>
-                    Забронюйте онлайн: Забронюйте свій кемпер за допомогою нашої простої
-                    системи бронювання. Оберіть дати і ви готові до подорожі!
+                    Book Online: Reserve your camper with our easy-to-use booking system. Just select your dates and you're ready to go!
                 </li>
                 <li>
-                    Вирушайте в дорогу: Заберіть свій кемпер з одного з наших зручних
-                    пунктів видачі та розпочніть свою пригоду.
+                    Hit the Road: Pick up your camper from one of our convenient locations and start your adventure.
                 </li>
                 <li>
-                    Досліджуйте та насолоджуйтесь: Відчуйте свободу на відкритій дорозі,
-                    досліджуючи різноманітні пейзажі України.
+                    Explore & Enjoy: Experience the freedom of the open road as you explore Ukraine’s diverse landscapes.
                 </li>
             </ul>
-            <h3>Готові розпочати свою пригоду?</h3>
+            <h3>Ready to Start Your Adventure?</h3>
             <p>
-                Почніть свою подорож з нами вже сьогодні! Перегляньте наш вибір
-                кемперів та забронюйте наступну пригоду всього в кілька кліків.
+                Begin your journey with us today! Browse our selection of campers and book your next adventure in just a few clicks.
             </p>
         </div>
     );

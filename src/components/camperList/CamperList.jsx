@@ -3,7 +3,7 @@ import { selectCampers } from '../../redux/campers/selectors';
 import CamperCard from '../camperCard/CamperCard';
 
 import css from './CamperList.module.css';
-import FilterBar from '../filterBar/filterBar';
+import FilterBar from '../filterBar/FilterBar';
 
 const CamperList = ({ openModal }) => {
   const campers = useSelector(selectCampers);

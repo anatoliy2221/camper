@@ -1,17 +1,19 @@
 import VehicleType from '../vehicleType/VehicleType';
 import VehicleEquipment from '../vehicleEquipment/VehicleEquipment';
-import Location from '../location/Location';
+import InputFormLocation from '../locationFilter/LocationFilter';
+import css from './FilterBar.module.css';
+
 
 
 const FilterBar = () => {
     return (
-        <>
-            <Location />
-            <p>Filters</p>
+        <form>
+            <InputFormLocation />
+            <p className={css.text}>Filters</p>
             <VehicleEquipment />
             <VehicleType />
 
-        </>
+        </form>
     )
 }
 

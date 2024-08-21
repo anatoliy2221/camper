@@ -1,0 +1,51 @@
+.label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(16, 24, 40, 0.6);
+    margin-bottom: 8px;
+}
+
+.locationWrapper {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.locationInput {
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    border: transparent;
+    padding-left: 42px;
+    width: 360px;
+    height: 56px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: #101828;
+}
+
+.locationInput::placeholder {
+    color: rgba(16, 24, 40, 0.6);
+
+}
+
+.icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    width: 18px;
+    height: 20px;
+    margin-right: 8px;
+    transform: translateY(-50%);
+}
+
+.locationInput p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #101828;
+}
+
+.locationInput:focus {
+    outline: transparent;
+}

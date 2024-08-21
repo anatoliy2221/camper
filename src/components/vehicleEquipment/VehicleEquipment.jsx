@@ -27,7 +27,8 @@ const VehicleEquipment = () => {
 
     return (
         <>
-            <p>Vehicle equipment</p>
+            <p className={css.equipmentListTitle}>Vehicle equipment</p>
+
             <ul className={css.equipmentList}>
                 {equipmentOptions.map(equipment => (
                     <li
