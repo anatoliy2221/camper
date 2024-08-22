@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { selectCampers } from '../../redux/campers/selectors';
 import CamperCard from '../camperCard/CamperCard';
-import FilterBar from '../filterBar/FilterBar';
+import FilterBar from '../filterBar/FilterBar.jsx';
 import css from './CamperList.module.css';
 
 

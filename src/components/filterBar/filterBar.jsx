@@ -12,7 +12,6 @@ const FilterBar = () => {
             <p className={css.text}>Filters</p>
             <VehicleEquipment />
             <VehicleType />
-
         </form>
     )
 }
