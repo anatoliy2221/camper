@@ -5,6 +5,7 @@ import pin from '../../assets/map-pin.svg';
 
 const FeaturesModal = ({ selectedCamper }) => {
     const { camperId } = useParams();
+    console.log(selectedCamper);
 
     if (!selectedCamper || selectedCamper._id !== camperId) return null;
 
@@ -25,10 +26,10 @@ const FeaturesModal = ({ selectedCamper }) => {
             </div>
             <p className={css.description}>Description: {selectedCamper.description}</p>
             <div className={css.tabs}>
-                <Link to={`/catalog/${camperId}/features`} className={css.tabLink}>Features</Link>
-                <Link to={`/catalog/${camperId}/reviews`} className={css.tabLink}>Reviews</Link>
+                <Link to={`/catalog/${camperId}/features`} className={css.tabLink} state={{ selectedCamper }}>Features</Link>
+                <Link to={`/catalog/${camperId}/reviews`} className={css.tabLink} state={{ selectedCamper }}>Reviews</Link>
             </div>
-            <Outlet context={selectedCamper} />
+            <Outlet />
         </div>
     );
 };

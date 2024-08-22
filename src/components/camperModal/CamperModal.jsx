@@ -10,6 +10,7 @@ const customStyles = {
     right: 'auto',
     bottom: 'auto',
     width: '982px',
+    height: '600px',
     borderRadius: '20px',
     padding: '40px',
     marginRight: '-50%',
