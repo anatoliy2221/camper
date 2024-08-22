@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux';
 import { selectCampers } from '../../redux/campers/selectors';
 import CamperCard from '../camperCard/CamperCard';
-
-import css from './CamperList.module.css';
 import FilterBar from '../filterBar/FilterBar';
+import css from './CamperList.module.css';
+
 
 const CamperList = ({ openModal }) => {
   const campers = useSelector(selectCampers);
