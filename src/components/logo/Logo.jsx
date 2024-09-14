@@ -1,4 +1,4 @@
-import travelTrucks from '../../assets/TravelTrucks.svg';
+import travelTrucks from '../../assets/travelTrucks.svg';
 import css from './Logo.module.css';
 
 const Logo = () => {
