@@ -14,7 +14,7 @@ const VehicleType = () => {
                 <label
                     className={`${css.label} ${vehicleType === 'van' ? css.selected : ''}`}
                 >
-                    <input
+                    <input id='test'
                         type="radio"
                         name="vehicleType"
                         value="van"
