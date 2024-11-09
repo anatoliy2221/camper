@@ -1,42 +1,50 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchCampers } from './operations';
+import { fetchCampers, getCampersPage } from './operations';
 
 const initialState = {
     data: [],
-    page: 1,
-    hasMore: true,
     isLoading: false,
+    isAllLoad: false,
     error: null,
 };
 
 const campersSlice = createSlice({
     name: 'campers',
     initialState,
-    reducers: {
-        setPage(state, action) {
-            state.page = action.payload;
-        },
-    },
-    extraReducers: (builder) => {
+    extraReducers: (builder) =>
         builder
             .addCase(fetchCampers.pending, (state) => {
                 state.isLoading = true;
+                state.error = null;
             })
-            .addCase(fetchCampers.fulfilled, (state, action) => {
+            .addCase(fetchCampers.fulfilled, (state, { payload }) => {
                 state.isLoading = false;
-                state.data = [...state.data, ...action.payload];
-                if (action.payload.length < 4) {
-                    state.hasMore = false;
+                state.data = payload;
+            })
+            .addCase(fetchCampers.rejected, (state, { payload }) => {
+                state.isLoading = false;
+                state.error = payload;
+            })
+            .addCase(getCampersPage.pending, (state) => {
+                state.isLoading = true;
+                state.error = null;
+            })
+            .addCase(getCampersPage.fulfilled, (state, { payload }) => {
+                state.isLoading = false;
+                if (payload.length === 0) {
+                    state.isAllLoad = true;
+                } else {
+                    state.data.push(...payload);
+                    if (payload.length < 4) {
+                        state.isAllLoad = true;
+                    }
                 }
             })
-            .addCase(fetchCampers.rejected, (state, action) => {
+            .addCase(getCampersPage.rejected, (state, { payload }) => {
                 state.isLoading = false;
-                state.error = action.error.message;
-            });
-    },
+                state.error = payload;
+            }),
 });
-
-export const { setPage } = campersSlice.actions;
 
 export const campersReducer = campersSlice.reducer;
 
